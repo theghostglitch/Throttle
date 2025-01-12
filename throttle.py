@@ -37,10 +37,10 @@ class throttle(plugins.Plugin):
 			value = ''
 			if throttled_value & 1 != 0:
 				value = "Volt"
-			elif throttled_value & 2 != 0:
-				value = "Freq"
 			elif throttled_value & 4 != 0:
 				value = "Temp"
+			elif throttled_value & 2 != 0:
+				value = "Freq"
 			else:
 				value = "Clear"
 			return value
