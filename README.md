@@ -10,6 +10,10 @@ Finally, enable it in your config.toml by adding the following line:
 
 ```toml
 main.plugins.throttle.enabled = true
+main.plugins.throttle.prefix = ''
 main.plugins.throttle.throttle_x_coord = 0
-main.plugins.throttle.throttle_y_coord = 96
+main.plugins.throttle.throttle_y_coord = 0
 ```
+
+Change your X and Y coords to where you want it to display on your screen.
+Add a prefix if you need it. Ex: 'Throttle:'
