@@ -17,7 +17,7 @@ class throttle(plugins.Plugin):
 		logging.info("Pwnagotchi Throttle Plugin loaded.")
 
 	def on_ui_setup(self, ui):
-		ui.add_element('Throttle', LabeledValue(color=BLACK, label='', value='Start',
+		ui.add_element('Throttle', LabeledValue(color=BLACK, label=f'{self.options["prefix"]}', value='Start',
 			position=(int(self.options["throttle_x_coord"]),
 			int(self.options["throttle_y_coord"])),
 			label_font=fonts.Small, text_font=fonts.Small))
